@@ -1,0 +1,22 @@
+version: "3.9"
+services:
+  mongodb:
+    image: mongo
+    container_name: mongodb
+    environment:
+      - PUID=1000
+      - PGID=1000
+    volumes:
+      - "C:/Users/jmfx/Dev/SpringWebFluxExperiments/database/mongo:/data/db"
+    ports:
+      - "27017:27017"
+    restart: unless-stopped
+  couchbase:
+    image: couchbase
+    container_name: couchbase
+    volumes:
+      - "C:/Users/jmfx/Dev/SpringWebFluxExperiments/database/couchbase:/opt/couchbase/var"
+    ports:
+      - "8091-8096:8091-8096"
+      - "11210-11211:11210-11211"
+    restart: unless-stopped
