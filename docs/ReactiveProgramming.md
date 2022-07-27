@@ -127,8 +127,11 @@
 
 ### T 14. `flatMap()` operator
 
-- 
+- It flattens to the same original type 
+ 
 ### T 15. Use of `flatMap()` to convert a Flux list to a Flux String
+
+- It flattens to the same original type
 
 ### T 16. Converting an Observable Flix to Mono
 

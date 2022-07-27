@@ -20,3 +20,12 @@ services:
       - "8091-8096:8091-8096"
       - "11210-11211:11210-11211"
     restart: unless-stopped
+  rabbitmq:
+      image: rabbitmq
+      container_name: rabbitmq
+      volumes:
+        - "C:/Users/jmfx/Dev/SpringWebFluxExperiments/database/rabbitmq:/var/lib/rabbitmq"
+      ports:
+        - "5672:5672"
+        - "15672:15672"
+      restart: unless-stopped
