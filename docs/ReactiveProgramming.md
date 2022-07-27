@@ -94,7 +94,8 @@
   - Subscriber
 - Project Reactor is used by Spring
 
-### T 07. Create Stream Flux Observable
+### T 07. Create Stream Flux Observable.
+º
 - subscribe() creates the observer
 
 ### T 08. `suscribe()` method
@@ -135,9 +136,18 @@
 
 ### T 16. Converting an Observable Flix to Mono
 
+- use `collectList`
+
 ### T 17. Use of `flatMap()` to merge two flows
 
+- Combined with `flatMap` 
+
 ### T 18. Use of `zipWith()` to merge two flows
+
+- Combined with `zipWIth`
+
+### T 19. Range Operator
+ 
 
 ### T 20. Time intervals w `interval()`  and `zipWith()`
 
